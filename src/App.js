@@ -1,13 +1,26 @@
-import Nav from "./components/nav/Nav.js";
-import Card from "./UI/Card/Card.js"
+import LogIn from "./Pages/LogIn/LogIn.js";
+import SignUp from "./Pages/SignUp/SignUp.js";
 import "./App.css"
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import RootLayout from "./Pages/Root.js";
 
 function App() {
+
+  const router =createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <RootLayout/>,
+        children:[
+          {path:'/',element :<LogIn/>},
+          {path:'/signUp', element: <SignUp/>}
+        ]
+      }
+    ]
+  )
+ 
   return (
-    <div className="app">
-     <Nav/>
-     <Card></Card>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
