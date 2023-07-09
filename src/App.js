@@ -1,11 +1,13 @@
 import Nav from "./components/nav/Nav.js";
+import Card from "./UI/Card/Card.js"
+import "./App.css"
 
 function App() {
   return (
-    <>
-     <h1>logIn</h1>
-     <Nav></Nav>
-    </>
+    <div className="app">
+     <Nav/>
+     <Card></Card>
+    </div>
   );
 }
 
