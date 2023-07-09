@@ -1,14 +1,14 @@
 import Card from "../../components/Card/Card.js"
 
-function SignUp() {
+function Profile() {
  
   return (
     <div className="app">
-     <Card>SignUp</Card>
+     <Card>Profile</Card>
     </div>
   );
 }
 
 
 
-export default SignUp
+export default Profile

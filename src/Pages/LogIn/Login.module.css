@@ -1,0 +1,4 @@
+.inputHolder{
+  display: flex;
+  flex-direction: column;
+}
